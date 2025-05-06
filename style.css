@@ -63,7 +63,7 @@
 }
 
 .banner-section-bg-container {
-    position: fixed;
+
     height: 100vh;
     background-size: cover;
 }
@@ -76,8 +76,6 @@
     padding-left:0;
 }
 .banner-caption {
-    position: fixed;
-    transform: translateX(-50%);
     color: black;
     font-family:"Nunito Sans";
     font-style: italic bold;   
