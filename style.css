@@ -4,20 +4,31 @@
     width: 80px;
     height: 70px;
 }
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    margin-bottom: 2px;
+  }
 
 #navItem1 {
     color: #323f4b;
     font-family: "Roboto";
+    
 }
 
 #navItem2 {
     color: #323f4b;
     font-family: "Roboto";
+    
 }
 
 #navItem3 {
     color: #323f4b;
     font-family: "Roboto";
+  
 }
 
 #navItem4 {
@@ -27,18 +38,24 @@
 }
 
 .nav-link:hover {
-    background-color: #03fc45;
+    background-color: #4CAF50;
+    border-radius: 1vh;
+
+}
+.d-block{
+    width: 200vh;
+    height: 95vh;
 }
 
 .banner-section-bg-container {
-    background-image: url("https://kj1bcdn.b-cdn.net/media/68828/few.jpg");
+    
     height: 100vh;
     background-size: cover;
 }
 
 .banner-heading {
     color: #a5fc03;
-    font-family: "Roboto";
+    font-family: "Nunito Sans";
     font-size: 45px;
     font-weight: 300;
 }
@@ -49,6 +66,52 @@
     font-size: 24px;
     font-weight: 300;
 }
+.search-container {
+  flex: 2; /* takes more space to help center it */
+  display: flex;
+  justify-content: center; /* centers the search inside its flex area */
+  align-items: center;
+}
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .search-container input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    background-color:#f1f1f1;
+    
+  }
+  
+  .search-container button {
+    padding: 6px 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #45a049;
+  }
+.login-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    font-family: Antonie;
+  }
+.login-btn:hover{
+    background-color: #4CAF50;
+}
 
 .custom-button {
     color: white;
@@ -57,18 +120,23 @@
     height: 45px;
     border-width: 0;
     border-radius: 8px;
+    margin-left: 10px;
     margin-right: 10px;
+    font-family: Antonie;
+    
 }
 
 .custom-outline-button {
-    color: #d0b200;
-    background-color: whitesmoke;
+    color: white;
+    background-color: #d0b200;
     width: 130px;
     height: 45px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 0px;
     border-color: #d0b200;
     border-radius: 8px;
+    font-family: Antonie;
+    
 }
 
 .wcu-section {
