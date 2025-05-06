@@ -17,11 +17,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="logo1.png" width="100%" height="80px">
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-4">
+        <div class="container" class="col-12 col-md-6 col-lg-3">
+            <a class="navbar-brand" href="#" style="position: absolute; left: 0;">
+                <img  src="logo1.png" width="100%" height="90%" class="d-flex flex-row">
             </a>
             <div class="search-container" >
                 <input type="text" placeholder="Search..." />
@@ -33,9 +32,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto" >
                    
-                    <a href="login.html" class="login-btn">Login</a>    
-                    <button onclick="sell-now" class="custom-button">SELL NOW</button>
-                    <button onclick="buy-now" class="custom-outline-button">BUY NOW</button>
+                    <a href="login.html" class="login-btn" class="d-flex flex-row justify-content-center" class="col-12 col-md-6 col-lg-3 p-3 mb-3">JOIN AS FARMER</a>    
+                    <!--<button onclick="sell-now" class="custom-button" class="d-flex flex-row justify-content-center" class="col-12 col-md-6 col-lg-3 p-3 mb-3">SELL NOW</button>-->
+                    <a href="sell" class="custom-outline-button" class="d-flex flex-row justify-content-end" class="col-12 col-md-6 col-lg-3 p-3 mb-3">SELLER/BUYER</a>
                     <!--<a class="nav-link active" id="navItem1" href="#wcuSection">
                         Why Choose Us?
                         <span class="sr-only">(current)</span>
@@ -48,15 +47,22 @@
             </div>
         </div>
     </nav>
+    <div class="ribbon-bar">
+        <p class="ribbon-text">Connecting Farmers and Buyers – Directly and Fairly</p>
+    </div>
     <div class="banner-section-bg-container d-flex justify-content-center flex-column">
          <div class="text-center">
-            <h1 class="banner-heading mb-3">FARMER'S MARKET</h1>
-            <p class="banner-caption mb-4">BIO ORGANIC</p>
-        
+            
+            <p class="banner-caption mb-0" style="text-indent: 40px;">Connecting Farmers and Buyers – Directly and Fairly
+                &nbsp;&nbsp;
+                <span class="sec-text" >Buy fresh produce straight from trusted farmers. No middlemen. No extra costs.</span>
+            </p>
+
+              
            <!--<button onclick="sell-now" class="custom-button">SELL NOW</button>
             <button onclick="buy-now" class="custom-outline-button">BUY NOW</button>-->
         </div>
-        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel" class="d-flex flex-row justify-content-center" class="col-12 col-md-6 col-lg-3">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>

@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
 .food-munch-logo {
     width: 80px;
     height: 70px;
@@ -11,7 +18,12 @@
     background-color: #333;
     color: white;
     margin-bottom: 2px;
+    flex-wrap: wrap;
   }
+.navbar-brand{
+    margin-left:0;
+    padding-left:0;
+}
 
 #navItem1 {
     color: #323f4b;
@@ -43,45 +55,63 @@
 
 }
 .d-block{
+    display:flex;
+    flex-shrink: 1;
+    background-size: cover;
     width: 200vh;
     height: 95vh;
 }
 
 .banner-section-bg-container {
-    
+    position: fixed;
     height: 100vh;
     background-size: cover;
 }
 
-.banner-heading {
-    color: #a5fc03;
-    font-family: "Nunito Sans";
-    font-size: 45px;
-    font-weight: 300;
-}
 
+.img-view{
+    display: flexbox;
+    justify-content: start;
+    margin-left:0;
+    padding-left:0;
+}
 .banner-caption {
-    color: #f5f7fa;
-    font-family: "Roboto";
-    font-size: 24px;
+    position: fixed;
+    transform: translateX(-50%);
+    color: black;
+    font-family:"Nunito Sans";
+    font-style: italic bold;   
+    font-size: 20px;
     font-weight: 300;
+    background-color:#bef5fa ;
+    width:cover ;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.sec-text{
+    color: #070b61;
 }
 .search-container {
   flex: 2; /* takes more space to help center it */
   display: flex;
   justify-content: center; /* centers the search inside its flex area */
-  align-items: center;
+  align-items: left;
+  text-align: left;
+  margin-left: 130px;
 }
 .nav-buttons {
     display: flex;
     gap: 10px;
   }
   .search-container input {
-    padding: 5px 10px;
+    width: 500px;
     border: none;
     border-radius: 4px 0 0 4px;
     outline: none;
     background-color:#f1f1f1;
+    text-align: left;
     
   }
   
@@ -98,8 +128,8 @@
     background-color: #45a049;
   }
 .login-btn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+    color: blue;
     border: none;
     padding: 8px 16px;
     border-radius: 5px;
@@ -111,11 +141,13 @@
   }
 .login-btn:hover{
     background-color: #4CAF50;
+    margin-top: 5px;
 }
+
 
 .custom-button {
     color: white;
-    background-color: #d0b200;
+    background-color: white;
     width: 130px;
     height: 45px;
     border-width: 0;
@@ -127,16 +159,21 @@
 }
 
 .custom-outline-button {
-    color: white;
-    background-color: #d0b200;
-    width: 130px;
-    height: 45px;
-    border-style: solid;
-    border-width: 0px;
-    border-color: #d0b200;
-    border-radius: 8px;
+ 
+    background-color: white;
+    color: blue;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
     font-family: Antonie;
-    
+}
+.custom-outline-button:hover{
+    background-color: #4CAF50;
+    margin-top: 5px;
 }
 
 .wcu-section {
@@ -259,7 +296,8 @@
 }
 
 .custom-button {
-    color: white;
+    color: #529ad1;
+    font-family: italic;
     background-color: #d0b200;
     width: 130px;
     height: 45px;
@@ -267,6 +305,23 @@
     border-radius: 8px;
     margin-right: 10px;
 }
+.ribbon-bar {
+    background-color:white;  /* Your desired ribbon color */
+    color: #6d4c41;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  .ribbon-text{
+    ;
+  }
+  .bg-section {
+    background-color: #d0b200;
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* adjust as needed */
+  }
 
 .delivery-and-payment-section {
     background-color: white;
@@ -354,4 +409,18 @@
     color: #7b8794;
     font-family: "Roboto";
     font-size: 16px;
+}
+
+@media screen and (max-width:991px){
+    .custom-outline-button{
+         display: flex;
+         
+    }
+   .custom-button{
+
+   }
+    login-btn{
+        width :80vh;
+        height: 40vh;
+    }
 }
