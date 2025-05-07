@@ -136,6 +136,7 @@
     display: flex;
     gap: 10px;
     font-family: Antonie;
+    position: absolute; right: 150px;
   }
 .login-btn:hover{
     background-color: #4CAF50;
@@ -168,6 +169,7 @@
     display: flex;
     gap: 10px;
     font-family: Antonie;
+    position: absolute; right: 0;
 }
 .custom-outline-button:hover{
     background-color: #4CAF50;
@@ -311,9 +313,7 @@
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
   }
-  .ribbon-text{
-    ;
-  }
+ 
   .bg-section {
     background-color: #d0b200;
     background-size: cover;
@@ -439,4 +439,10 @@
     .navbar-toggler{
         position: absolute; right: 0;
     }
+}
+@media screen and (max-width:767) {
+    .nav-link{
+        position: absolute; right: 0;
+    }
+    
 }
