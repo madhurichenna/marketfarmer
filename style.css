@@ -1,12 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
-
-
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
+.body1 {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.open-popup {
+  font-size: 18px;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .food-munch-logo {
     width: 80px;
     height: 70px;
@@ -68,13 +145,6 @@
     background-size: cover;
 }
 
-
-.img-view{
-    display: flexbox;
-    justify-content: start;
-    margin-left:0;
-    padding-left:0;
-}
 .banner-caption {
     color: black;
     font-family:"Nunito Sans";
@@ -321,33 +391,6 @@
     height: 500px; /* adjust as needed */
   }
 
-.delivery-and-payment-section {
-    background-color: white;
-}
-
-.delivery-and-payment-section-img {
-    width: 270px;
-}
-
-.delivery-and-payment-section-heading {
-    color: #183b56;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.delivery-and-payment-section-description {
-    color: #5a7184;
-    font-family: "Roboto";
-    font-size: 16px;
-}
-
-.payment-card-img {
-    width: 50px;
-    height: 50px;
-    margin-right: 28px;
-}
-
 .custom-button {
     color: white;
     background-color: #d0b200;
@@ -360,32 +403,34 @@
 
 .follow-us-section {
     background-color: white;
-}
-
-.follow-us-section-heading {
+  }
+  .follow-us-section-heading {
     text-align: center;
     color: #183b56;
     font-family: "Roboto";
     font-size: 28px;
     font-weight: 700;
-}
-
-.follow-us-icon-container {
+  }
+  .follow-us-icon-container {
     background-color: #faf7e8;
     width: 80px;
     height: 80px;
-    border-radius: 40px;
+    border-radius: 50%;
     margin: 15px;
-    padding-top: 22px;
-    padding-bottom: 14px;
-    padding-right: 16px;
-    padding-left: 22px;
-}
-
-.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon {
     color: #d0b200;
     font-size: 35px;
-}
+  }
+  .follow-icon-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+
 .navbar{
     height: 90px;
 }
@@ -442,7 +487,10 @@
 }
 @media screen and (max-width:767) {
     .nav-link{
-        position: absolute; right: 0;
+        position: absolute;right: 0;
     }
-    
+    .logo1{
+        width: 100px ;
+        height: 50px;
+    }
 }
