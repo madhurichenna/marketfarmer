@@ -1,48 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
-.body1 {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .open-popup {
   font-size: 18px;
   color: #007bff;
   text-decoration: underline;
   cursor: pointer;
 }
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-.popup-content {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-  position: relative;
-}
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 24px;
-  cursor: pointer;
-}
+
+
 .hidden {
   display: none;
 }
@@ -53,13 +19,7 @@ form {
   flex-direction: column;
 }
 
-input {
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-}
+
 
 button {
   padding: 12px;
@@ -84,10 +44,7 @@ button:hover {
   text-decoration: underline;
 }
 
-.food-munch-logo {
-    width: 80px;
-    height: 70px;
-}
+
 .navbar {
     display: flex;
     align-items: center;
