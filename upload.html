@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sell on AgriX</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <script>
+    if (!localStorage.getItem("loggedIn")) {
+      alert("Please login first.");
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <h1>🛒 Sell Your Product</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="login.html">Login</a> |
+      <a href="upload.html">Sell</a>
+    </nav>
+  </header>
+
+  <section id="post-ad">
+    <form id="adForm">
+    
+    
+      <label for="title">Item Title</label>
+      <input type="text" id="title" placeholder="Item Title">
+
+      <label for="category">Category</label>
+      <input type="text" id="category" placeholder="Category (e.g., Tractor)">
+
+      <label for="price">Price (₹)</label>
+      <input type="text" id="price" placeholder="Price (₹)">
+
+      <label for="description">Description</label>
+      <textarea id="description" placeholder="Description"></textarea>
+
+      <label for="image">Upload Image</label>
+      <input type="file" id="image">
+
+      <button type="submit" class="submit-btn">Sell</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
