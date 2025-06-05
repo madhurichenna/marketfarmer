@@ -2,48 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Sell on AgriX</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Sell on MARKETFARMER</Market-Farmer></title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="sell-container">
   <script>
     if (!localStorage.getItem("loggedIn")) {
       alert("Please login first.");
       window.location.href = "login.html";
     }
   </script>
-
+ <nav class="nav-linksell">
   <header>
-    <h1>🛒 Sell Your Product</h1>
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="login.html">Login</a> |
-      <a href="upload.html">Sell</a>
-    </nav>
+    <h1 class="sell-header">🛒 Sell Your Product</h1>
+    <div class="top-nav">
+      <a href="index.html" class="home-link">Home</a> |
+      <a href="login.html" class="login-link">Login</a> |
+      <a href="upload.html" class="sell-link">Sell</a>
+    </div>
   </header>
+  </nav>
 
-  <section id="post-ad">
-    <form id="adForm">
-    
-    
-      <label for="title">Item Title</label>
+  
+   <div class="overlay1">
+    <div class="sell-box">
+    <form>
+      <label for="title">ITEM TITLE</label>
       <input type="text" id="title" placeholder="Item Title">
 
-      <label for="category">Category</label>
+      <label for="category">CATEGORY</label>
       <input type="text" id="category" placeholder="Category (e.g., Tractor)">
 
-      <label for="price">Price (₹)</label>
+      <label for="price">PRICE (₹)</label>
       <input type="text" id="price" placeholder="Price (₹)">
 
-      <label for="description">Description</label>
-      <textarea id="description" placeholder="Description"></textarea>
+      <label for="description">DESCRIPTION</label>
+      <textarea id="description" class="desc"  placeholder="Description"></textarea>
 
-      <label for="image">Upload Image</label>
+      <label for="image">UPLOAD IMAGE</label>
       <input type="file" id="image">
 
-      <button type="submit" class="submit-btn">Sell</button>
+      <button type="submit" class="submit-btn">SELL
+      </button>
     </form>
-  </section>
+   </div>
+  
 
   <script src="script.js"></script>
 </body>

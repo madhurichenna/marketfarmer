@@ -493,8 +493,187 @@ button {
       display: block;
       margin-top: 10px;
       font-weight: bold;
+      color: #1b5e20;
  }
+
 .submit-btn{
       margin-top: 100px;
       padding: 10px 20px;
+}
+
+.login-button{
+    background-color: #2ded1f;
+    color: white;
+    font-size: 10px;
+    width: 60px;
+}
+.username1{
+     width: 200px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    background-color:#f1f1f1;
+    text-align: center;
+    
+}
+.password1{
+     width: 200px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    background-color:#f1f1f1;
+    text-align: center;
+}
+
+
+ input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      flex: center;
+    }
+    .form1{
+        width: 500px;
+        height: 200px;
+        background-color: #bef7f2;
+        -ms-flex-align: center;
+    }
+    .nav-links{
+        color: #0056b3;
+        text-align: center; 
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+        font-size: 25px;
+        
+    }
+     .nav-linksell{
+        color: #0056b3;
+        text-align: right; 
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+        font-size: large;
+        
+    }
+.top-nav {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 25px;
+}
+.home-link:hover{
+ transition: color 0.3s ease, text-decoration 0.3s ease;
+ font-size: 20px;
+}
+.login-link:hover{
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+ font-size: 20px; 
+}
+.sell-link:hover{
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+ font-size: 20px; 
+}
+.login-container{
+  background-image:url(https://www.shutterstock.com/image-photo/image-rainladen-clouds-arriving-over-600nw-2097085765.jpg) ;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+.login-header{
+    font-style: italic;
+    color: #1b5e20;
+    text-align: center;
+}
+/* Dark overlay to enhance form visibility */
+.overlay {
+ 
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login form box styling */
+.login-box {
+ 
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-box button:hover {
+  background-color: #1b5e20;
+}
+
+.sell-container{
+  background-image:url(https://www.shutterstock.com/image-photo/image-rainladen-clouds-arriving-over-600nw-2097085765.jpg) ;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+.sell-header{
+    font-style: italic;
+    color: #1b5e20;
+    text-align: center;
+    font-size: 30px;
+}
+/* Dark overlay to enhance form visibility */
+.overlay1 {
+ 
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login form box styling */
+.sell-box {
+ 
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.sell-box input {
+  width: 100%;
+  padding: 8px;
+  margin: 3px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #e6faf8;
+}
+.desc{
+    background-color: #e6faf8;
+}
+.sell-box button {
+  width: 100%;
+  padding: 8px;
+  background-color: #2e7d32;
+
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.sell-box button:hover {
+  background-color: #1b5e20;
 }
