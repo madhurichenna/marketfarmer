@@ -17,15 +17,26 @@
     </nav>
   </header>
   
-
+  <div class="login-success" id="login-success">✅ Login Successful!</div>
   <div class="overlay">
+    
     <div class="login-box">
-      <form>
+      <form id="login-form">
         <input type="text" placeholder="Username" required>
         <input type="password" placeholder="Password" required>
         <button type="submit">Login</button>
       </form>
+      
     </div>
-  
+    <script>
+    const form = document.getElementById('login-form');
+    const successMsg = document.getElementById('login-success');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // prevent form from refreshing the page
+      // you can validate input here if needed
+      successMsg.style.display = 'block';
+    });
+  </script>
 </body>
 </html>

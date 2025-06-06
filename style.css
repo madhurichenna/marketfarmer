@@ -588,7 +588,14 @@ button {
   justify-content: center;
   align-items: center;
 }
-
+ .login-success {
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 25px;
+      margin-top: 20px;
+      display: none;
+    }
 /* Login form box styling */
 .login-box {
  
